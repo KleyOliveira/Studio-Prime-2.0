@@ -4443,3 +4443,22 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+// Selecionar o vídeo
+const video = document.getElementById('videoElement');
+
+// Configurar o IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Iniciar o vídeo quando a seção entrar na tela
+      video.play();
+    } else {
+      // Pausar o vídeo quando a seção sair da tela
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 }); // threshold define quando a ação deve ocorrer, 0.5 significa que 50% da seção deve estar visível
+
+// Observar o vídeo
+observer.observe(video);

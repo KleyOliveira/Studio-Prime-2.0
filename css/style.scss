@@ -6,6 +6,9 @@ $primary2: #f1db25;
 
 // import fonts
 
+html{
+  scroll-behavior: smooth
+}
 
 // fontAwesome
 @import url("font-awesome.min.css");

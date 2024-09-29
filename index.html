@@ -14,11 +14,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap"
     rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+<!-- Ícones do Bootstrap -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="hero_area">
+  <div class="hero_area" style="padding: 100px 0;">
     <div class="hero_bg_box">
       <div class="img-box">
         <img src="images/bg-hero-blur.png" alt="">
@@ -30,7 +33,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
               <span>
-                <img src="images/LogoStudioPrime.png" alt="" height="50px">
+                <img src="images/LogoStudioPrime.png" alt="" height="50px" style="padding-bottom: 10px;">
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,16 +43,13 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item">
-                  <a class="nav-link" href="">Inicio </a>
+                  <a class="nav-link" href="#">Inicio </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Quem Somos</a>
+                  <a class="nav-link" href="#about">Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Serviços </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="">Contato</a>
+                  <a class="nav-link" href="#serv">Serviços </a>
                 </li>
               </ul>
             </div>
@@ -72,7 +72,7 @@
                       </span>
                     </h1>
                     <div class="btn-box">
-                      <a href="" class="btn-1"> CONTATO </a>
+                      <a href="https://api.whatsapp.com/send?phone=5513974145162&text=Ol%C3%A1,+gostaria+de+atendimento!&fbclid=PAZXh0bgNhZW0CMTEAAaYq7-WPeA8aNWbFlvXxsbWCImg1l3YBQLCxwyCsgD8R7IJl16qQj_XKctA_aem_Or-5tgBWEz_tyg3-vVXsHg" class="btn-1"> CONTATO </a>
                     </div>
                   </div>
                 </div>
@@ -83,7 +83,7 @@
       </div>
     </section>
   </div>
-  <section class="about_section layout_padding">
+  <section class="about_section layout_padding" id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-6 px-0">
@@ -108,7 +108,7 @@
       </div>
     </div>
   </section>
-  <section class="client_section layout_padding">
+  <section class="client_section layout_padding" id="team">
     <div class="container ">
       <div class="heading_container heading_center">
         <h2>
@@ -221,11 +221,11 @@
       </div>
     </div>
   </section>
-  <section class="service_section layout_padding">
+  <section class="service_section layout_padding" id="serv">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Our services
+          SERVIÇOS
         </h2>
       </div>
       <div class="row">
@@ -233,29 +233,14 @@
           <div class="box ">
             <div class="img-box">
               <i class="fas fa-hard-hat" style="font-size: 60px;"></i>
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
+
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                ALVENARIA
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Trabalhos de alvenaria executados com precisão, utilizando materiais resistentes e de alta qualidade para garantir uma construção sólida e durável. Foco em segurança, acabamento impecável e prazo.
               </p>
             </div>
           </div>
@@ -263,31 +248,14 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
+              <i class="fas fa-hammer" style="font-size: 60px;"></i>
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                DRYWALL
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Soluções completas em drywall, ideais para criar divisórias e forros que proporcionam isolamento térmico e acústico, além de um acabamento moderno e sofisticado para diversos tipos de projetos.
               </p>
             </div>
           </div>
@@ -295,31 +263,14 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
+              <i class="fas fa-faucet" style="font-size: 60px;"></i>
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                HIDRÁULICA
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Instalação e manutenção de sistemas hidráulicos com qualidade e precisão. Oferecemos soluções seguras e eficientes para garantir o correto funcionamento e a durabilidade das instalações.
               </p>
             </div>
           </div>
@@ -327,31 +278,14 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
+              <i class="fas fa-couch" style="font-size: 60px;"></i>
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                MÓVEIS
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Móveis personalizados e feitos sob medida, projetados para garantir funcionalidade e estilo. Cada peça é desenvolvida com materiais de qualidade, adaptando-se perfeitamente ao seu ambiente.
               </p>
             </div>
           </div>
@@ -359,31 +293,14 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
+              <i class="fas fa-paint-brush" style="font-size: 60px;"></i>
             </div>
             <div class="detail-box">
               <h6>
-                Home Security
+                PINTURA
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Serviços de pintura com acabamento de alta qualidade. Utilizamos técnicas avançadas e materiais duráveis, garantindo cores vibrantes e resistência, perfeitas para renovar qualquer ambiente.
               </p>
             </div>
           </div>
@@ -391,31 +308,13 @@
         <div class="col-md-4">
           <div class="box ">
             <div class="img-box">
-              <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
-                xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <g>
-                    <circle cx="256" cy="125" r="15" />
-                    <path
-                      d="m356 262c-18.955 0-35.996-10.532-44.472-27.484l-2.111-4.223c-2.541-5.083-7.735-8.293-13.417-8.293h-80c-5.682 0-10.876 3.21-13.417 8.292l-2.111 4.222c-8.476 16.954-25.517 27.486-44.472 27.486-8.284 0-15 6.716-15 15v85.597c0 33.654 10.619 65.715 30.708 92.716 20.089 27 47.747 46.384 79.982 56.054 1.406.422 2.858.633 4.31.633s2.904-.211 4.31-.633c32.235-9.67 59.893-29.054 79.982-56.054 20.089-27.001 30.708-59.062 30.708-92.716v-85.597c0-8.284-6.716-15-15-15zm-46.967 87.322-56.568 56.568c-2.929 2.929-6.768 4.394-10.606 4.394s-7.678-1.464-10.606-4.394l-28.284-28.284c-5.858-5.858-5.858-15.355 0-21.213 5.857-5.858 15.355-5.858 21.213 0l17.678 17.677 45.962-45.961c5.857-5.858 15.355-5.858 21.213 0 5.856 5.858 5.856 15.355-.002 21.213z" />
-                    <g>
-                      <path
-                        d="m485.371 179.287-220-176c-5.479-4.383-13.263-4.383-18.741 0l-220 176c-6.469 5.175-7.518 14.614-2.342 21.083 5.175 6.468 14.614 7.517 21.083 2.342l30.629-24.503v232.791c0 8.284 6.716 15 15 15h31.119c-7.333-20.12-11.119-41.476-11.119-63.403v-85.597c0-24.813 20.187-45 45-45 7.632 0 14.226-4.075 17.639-10.901l2.112-4.224c7.67-15.342 23.093-24.875 40.249-24.875h80c17.156 0 32.579 9.533 40.25 24.878l2.111 4.223c3.412 6.824 10.007 10.899 17.639 10.899 24.813 0 45 20.187 45 45v85.597c0 21.927-3.786 43.283-11.119 63.403h31.119c8.284 0 15-6.716 15-15v-232.791l30.629 24.503c2.766 2.213 6.075 3.288 9.361 3.288 4.4 0 8.76-1.927 11.722-5.63 5.176-6.469 4.127-15.908-2.341-21.083zm-229.371-9.287c-24.813 0-45-20.187-45-45s20.187-45 45-45 45 20.187 45 45-20.187 45-45 45z" />
-                    </g>
-                  </g>
-                  <g>
-                    <path d="m156 15c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15v70.372l60-48z" />
-                  </g>
-                </g>
-              </svg>
-            </div>
+              <i class="fas fa-ruler-combined" style="font-size: 60px;"></i>
             <div class="detail-box">
               <h6>
-                Home Security
+                PLANEJADOS
               </h6>
               <p>
-                Minima consequatur architecto eaque assumenda ipsam itaque quia eum in doloribus debitis impedit ut
-                minus tenetur corrupti excepturi ullam.
+                Móveis planejados sob medida para atender às suas necessidades. Com design funcional e sofisticado, cada detalhe é pensado para otimizar espaços e oferecer praticidade e beleza ao ambiente.
               </p>
             </div>
           </div>
@@ -423,76 +322,46 @@
       </div>
     </div>
   </section>
-
-  <!-- end client section -->
-
-  <!-- contact section -->
-
-
-
-  <!-- end contact section -->
-
-  <!-- team section -->
-
-
-  <!-- end team section -->
-
-  <!-- info section -->
+  <section class="team_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto">
+          <div class="box">
+            <div class="img-box" style="display: flex; justify-content: center;">
+              <video id="videoElement" src="videos/apresentacaoSPP.mp4" controls height="500px" style="border-radius: 5px; border: 2px solid #000; margin-bottom: 40px;"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <section class="info_section ">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <div class="info_links">
-            <h5>
-              Useful Link
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                  dolor sit amet, consectetur
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  magna aliqua. Ut enim ad
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  minim veniam,
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  quisdotempor incididunt r
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
           <div class="info_info">
             <h5>
-              Contact Us
+              Unidade:
             </h5>
           </div>
           <div class="info_contact">
-            <a href="" class="">
+            <a href="https://maps.app.goo.gl/6XtroJS7hhBvoMSn9" class="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet,
+                Estrada de Pernambuco, 753 - Lot. Joao Batista Juliao, Guarujá - SP, 11443-410
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 1234567890
+                Telefone: (13) 97414-5162
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                demo@gmail.com
+                studioprimeguaruja@gmail.com
               </span>
             </a>
           </div>
@@ -500,26 +369,26 @@
         <div class="col-md-3">
           <div class="info_info">
             <h5>
-              Contact Us
+              Unidade:
             </h5>
           </div>
-          <div class="info_contact">
-            <a href="" class="">
+          <div class="info_contact" >
+            <a href="https://maps.app.goo.gl/QHnuStgtnmvFaRXa7" class="">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet,
+                R. Mario Ribeiro, 45 - Centro, Guarujá - SP, 11410-190
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 1234567890
+                Telefone: (13) 97414-5162
               </span>
             </a>
             <a href="" class="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                demo@gmail.com
+                studioprimeguaruja@gmail.com              
               </span>
             </a>
           </div>
@@ -530,14 +399,14 @@
               Siga-nos
             </h5>
             <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a href="https://www.instagram.com/studioprimeguaruja/">
+                <i class="bi bi-instagram" aria-hidden="true" style="font-size: 25px;"></i>
               </a>
-              <a href="">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
+              <a href="https://www.facebook.com/StudioPrimeGuaruja">
+                <i class="bi bi-facebook" aria-hidden="true" style="font-size: 25px;"></i>
               </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+              <a href="https://www.youtube.com/@studioprimeguaruja281">
+                <i class="bi bi-youtube" aria-hidden="true" style="font-size: 25px;"></i>
               </a>
             </div>
           </div>
@@ -545,17 +414,15 @@
       </div>
     </div>
   </section>
-
-  <!-- end info_section -->
-
-
-
-
-  <!-- footer section -->
+  <div class="whats-contato">
+    <a
+        href="https://api.whatsapp.com/send?phone=5513974145162&text=Ol%C3%A1,+gostaria+de+atendimento!&fbclid=PAZXh0bgNhZW0CMTEAAaYq7-WPeA8aNWbFlvXxsbWCImg1l3YBQLCxwyCsgD8R7IJl16qQj_XKctA_aem_Or-5tgBWEz_tyg3-vVXsHg" target="_blank">
+        <i class="bi bi-whatsapp"></i></a>
+    </a>
+</div>
   <footer class="container-fluid footer_section">
     <p>
-      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
+      &copy; 2024 - Studio Prime Projetos. Todos os direitos reservados.
     </p>
   </footer>
   <!-- footer section -->
